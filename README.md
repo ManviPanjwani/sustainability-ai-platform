@@ -4,6 +4,7 @@
 ![Stars](https://img.shields.io/github/stars/ManviPanjwani/sustainability-ai-platform)
 ![Last Commit](https://img.shields.io/github/last-commit/ManviPanjwani/sustainability-ai-platform)
 
+The Sustainability AI Platform is an open-source system that enables organizations of any size — from manufacturing plants and logistics companies to data centers and smart cities — to monitor and reduce their carbon emissions in real time. It collects data from IoT sensors, utility APIs, and cloud workloads, calculates Scope 1–3 emissions, and applies AI models to forecast usage, detect inefficiencies, and recommend actionable optimizations. Companies can use the platform to track sustainability KPIs, generate compliance-ready reports, simulate “what-if” scenarios for greener operations, and embed automated decision policies directly into their energy and supply-chain systems.
 **Real-time, AI-powered sustainability intelligence** to measure, forecast, and reduce an organization’s carbon footprint across energy, logistics, and operations.
 
 
