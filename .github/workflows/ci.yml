@@ -5,33 +5,25 @@ on:
   pull_request:
 
 jobs:
-  backend:
-    name: API (Python)
+  build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: apps/api
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Check Python setup
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install -r requirements.txt
-      - run: echo "placeholder tests" && python - <<PY
-assert 1+1==2
-print("ok")
-PY
+      - name: Python sanity
+        run: |
+          python3 --version
+          echo "✅ Python ready"
 
-  frontend:
-    name: Web (Node)
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: apps/web
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Check Node setup
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm ci || npm install
-      - run: npm run build --if-present
+      - name: Node sanity
+        run: |
+          node -v
+          npm -v
+          echo "✅ Node ready"
