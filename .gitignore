@@ -1,0 +1,85 @@
+# ------------------------------
+# Global ignores
+# ------------------------------
+.DS_Store
+.env
+.env.*
+*.log
+*.sqlite3
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ------------------------------
+# Python / FastAPI
+# ------------------------------
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+dist/
+build/
+*.egg-info/
+.coverage
+htmlcov/
+pytest_cache/
+.idea/
+.vscode/
+
+# ------------------------------
+# Node / Next.js
+# ------------------------------
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+# if you use pnpm or yarn, ignore their lockfiles instead
+# pnpm-lock.yaml
+# yarn.lock
+
+# ------------------------------
+# Docker / Compose
+# ------------------------------
+docker-compose.override.yml
+*.pid
+*.seed
+*.db
+*.tar
+*.bak
+*.old
+
+# ------------------------------
+# Mac / system files
+# ------------------------------
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.fseventsd
+
+# ------------------------------
+# Editors / IDEs
+# ------------------------------
+*.swp
+*.swo
+*.swn
+*.bak
+.idea/
+.vscode/
+*.code-workspace
+
+# ------------------------------
+# Miscellaneous
+# ------------------------------
+coverage/
+tmp/
+temp/
+cache/
+logs/
+uploads/
